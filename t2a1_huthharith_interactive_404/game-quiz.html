@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen AI Fighting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gen AI Fighting Game</h1>
+        </header>
+
+        <main>
+            <div id="game">
+                <div id="health-bars">
+                    <div class="health-bar">
+                        <span>Player Health:</span>
+                        <div id="player-health" class="health"></div>
+                    </div>
+                    <div class="health-bar">
+                        <span>AI Health:</span>
+                        <div id="ai-health" class="health"></div>
+                    </div>
+                </div>
+
+                <div id="question-area">
+                    <h2 id="question"></h2>
+                    <div id="options"></div>
+                    <button id="attack-btn">Attack!</button>
+                </div>
+
+                <div id="result"></div>
+
+                <div id="characters">
+                    <div id="player" class="character">
+                        <img src="pacman.gif" alt="Player" id="player-sprite">
+                    </div>
+                    <div id="ai" class="character">
+                        <img src="ghost.gif" alt="AI" id="ai-sprite">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <a href="home.html" class="btn">Back to Home</a>
+        </footer>
+    </div>
+
+    <!-- Audio elements for attack sounds -->
+    <audio id="player-attack-sound" src="player attack.mp3"></audio>
+    <audio id="ai-attack-sound" src="ai attack.mp3"></audio>
+
+    <script src="game-quiz.js"></script>
+</body>
+</html>
